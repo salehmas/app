@@ -4,367 +4,552 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تحميل واتساب جي بي التحديث الجديد 2026 – GBWhatsApp ضد الحظر مجانًا</title>
-    <meta name="description" content="تحميل واتساب جي بي التحديث الجديد GBWhatsApp 2026 ضد الحظر مجانًا - نسخة أبو صالح المطورة مع جميع المميزات">
+    <meta name="description" content="تحميل واتساب جي بي التحديث الجديد GBWhatsApp 2026 ضد الحظر مجانًا - نسخة أبو صالح المطورة">
+    <link rel="icon" href="https://upfileapp.9aleh.com/file/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --green: #00b894;
+            --green-dark: #008e73;
+            --green-light: #e8faf5;
+            --green-border: #c8ece3;
+            --dark: #1a1a2e;
+            --text: #333;
+            --light-bg: #f8f9fa;
+            --shadow: 0 5px 20px rgba(0,0,0,0.06);
+            --shadow-hover: 0 15px 40px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Segoe UI', Tahoma, 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(180deg, #f0fdf9 0%, #e8faf5 100%);
             line-height: 1.8;
-            color: #2d3436;
-            padding: 20px;
+            color: var(--text);
             min-height: 100vh;
         }
 
+        [data-lang] { display: none !important; }
+        [data-lang].active { display: block !important; }
+        span[data-lang].active, a[data-lang].active, p[data-lang].active, strong[data-lang].active, em[data-lang].active { display: inline-block !important; }
+        div[data-lang].active, h1[data-lang].active, h2[data-lang].active, h3[data-lang].active { display: block !important; }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background: var(--dark);
+            padding: 10px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #fff;
+            font-weight: 800;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+        .logo i { color: #55efc4; font-size: 1.2rem; }
+
+        .lang-switcher { display: flex; gap: 6px; }
+        .lang-btn {
+            background: transparent;
+            border: 1.5px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Tajawal', sans-serif;
+            white-space: nowrap;
+        }
+        .lang-btn:hover { background: rgba(255,255,255,0.1); }
+        .lang-btn.active { background: var(--green); border-color: var(--green); }
+
+        /* ===== CONTAINER ===== */
         .container {
-            max-width: 850px;
-            margin: 0 auto;
-            background: #ffffff;
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        /* ===== HEADER CARD ===== */
+        .header-card {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 50%, #004d40 100%);
+            color: #fff;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-            padding: 40px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: #2d3436;
+            padding: 40px 25px;
             text-align: center;
-            margin-bottom: 30px;
-            line-height: 1.4;
-            border-bottom: 4px solid #6c5ce7;
-            padding-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 25px;
         }
 
-        h2 {
-            font-size: 1.6rem;
-            color: #6c5ce7;
-            margin: 40px 0 20px;
-            padding-right: 15px;
-            border-right: 4px solid #6c5ce7;
+        .header-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,184,148,0.12), transparent 70%);
+            animation: rotate 25s linear infinite;
         }
 
-        h3 {
-            font-size: 1.3rem;
-            color: #2d3436;
-            margin: 25px 0 15px;
-            color: #e17055;
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
-        p {
+        .header-card h1 {
+            font-size: 1.7rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.5;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 5px 18px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== CONTENT CARD ===== */
+        .content-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px 25px;
+            box-shadow: var(--shadow);
             margin-bottom: 20px;
-            font-size: 1.05rem;
         }
 
         .feature-image {
             text-align: center;
-            margin: 30px 0;
+            margin: 10px 0 20px;
         }
-
         .feature-image img {
             max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
         }
 
-        .feature-image img:hover {
-            transform: scale(1.02);
+        h2 {
+            font-size: 1.25rem;
+            color: var(--green-dark);
+            margin: 25px 0 12px;
+            padding-right: 12px;
+            border-right: 4px solid var(--green);
+            font-weight: 800;
         }
 
-        ul, ol {
-            margin: 20px 40px;
-            padding-right: 10px;
-        }
+        p { margin-bottom: 12px; font-size: 0.95rem; color: #555; }
 
-        li {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
+        ul, ol { margin: 12px 25px; padding-right: 5px; }
+        li { margin-bottom: 8px; font-size: 0.9rem; color: #555; }
 
         code {
-            background: #f8f9fa;
-            padding: 5px 10px;
+            background: var(--green-light);
+            padding: 3px 8px;
             border-radius: 5px;
-            font-family: 'Courier New', monospace;
-            color: #e17055;
-            font-size: 0.95rem;
+            color: var(--green-dark);
+            font-size: 0.85rem;
+            border: 1px solid var(--green-border);
         }
 
         blockquote {
-            background: #fff3e0;
-            border-right: 4px solid #ff9800;
-            padding: 15px 20px;
+            background: #fff8e1;
+            border-right: 4px solid #ffc107;
+            padding: 12px 18px;
             border-radius: 10px;
-            margin: 20px 0;
-            font-style: italic;
+            margin: 15px 0;
+            font-size: 0.9rem;
+            color: #666;
         }
 
+        /* ===== DOWNLOAD BOX ===== */
         .download-box {
-            background: linear-gradient(145deg, #f9f9f9, #f1f1f1);
+            background: var(--green-light);
+            border: 2px solid var(--green-border);
             border-radius: 15px;
-            border: 2px solid #6c5ce7;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
-            margin: 40px 0;
-            padding: 30px 20px;
+            padding: 20px;
             text-align: center;
+            margin: 20px 0;
         }
 
         .download-box h2 {
             border-right: none;
             text-align: center;
-            margin-top: 0;
-            margin-bottom: 25px;
+            margin: 0 0 15px;
         }
 
         .btn {
             display: inline-block;
-            margin: 10px 0;
-            padding: 15px 35px;
-            background: #6c5ce7;
-            color: white;
+            margin: 6px 0;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.9rem;
             text-decoration: none;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 700;
-            min-width: 250px;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.35);
+            transition: var(--transition);
+            min-width: 200px;
+            white-space: nowrap;
         }
 
-        .btn:hover {
-            background: #5f4dd0;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(108, 92, 231, 0.5);
-        }
+        .btn-green { background: linear-gradient(135deg, #00b894, #00cec9); color: #fff; box-shadow: 0 4px 12px rgba(0,184,148,0.3); }
+        .btn-green:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,184,148,0.4); }
+        .btn-purple { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: #fff; box-shadow: 0 4px 12px rgba(108,92,231,0.3); }
+        .btn-purple:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(108,92,231,0.4); }
+        .btn-blue { background: linear-gradient(135deg, #0984e3, #74b9ff); color: #fff; box-shadow: 0 4px 12px rgba(9,132,227,0.3); }
+        .btn-blue:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(9,132,227,0.4); }
+        .btn-orange { background: linear-gradient(135deg, #e17055, #fab1a0); color: #fff; box-shadow: 0 4px 12px rgba(225,112,85,0.3); }
+        .btn-orange:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(225,112,85,0.4); }
 
-        .btn-green {
-            background: #00b894;
-            box-shadow: 0 5px 15px rgba(0, 184, 148, 0.35);
-        }
-
-        .btn-green:hover {
-            background: #00a381;
-        }
-
-        .btn-blue {
-            background: #0984e3;
-            box-shadow: 0 5px 15px rgba(9, 132, 227, 0.35);
-        }
-
-        .btn-blue:hover {
-            background: #0873c7;
-        }
-
-        .btn-orange {
-            background: #e17055;
-            box-shadow: 0 5px 15px rgba(225, 112, 85, 0.35);
-        }
-
-        .btn-orange:hover {
-            background: #d35d42;
-        }
-
-        .faq-section {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 30px 0;
-        }
+        /* ===== ACCORDION FAQ ===== */
+        .faq-section { margin: 20px 0; }
 
         .faq-item {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #dee2e6;
+            background: #fff;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            transition: var(--transition);
         }
 
-        .faq-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
+        .faq-item.active {
+            border-color: var(--green);
+            box-shadow: 0 5px 20px rgba(0,184,148,0.15);
         }
 
-        hr {
-            border: none;
-            border-top: 2px solid #dee2e6;
-            margin: 40px 0;
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 18px;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 0.95rem;
+            color: #333;
+            user-select: none;
+            transition: var(--transition);
         }
 
+        .faq-question:hover {
+            background: var(--green-light);
+        }
+
+        .faq-icon {
+            font-size: 0.9rem;
+            color: var(--green);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            padding: 0 18px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 0 18px 15px;
+        }
+
+        .faq-answer p {
+            font-size: 0.88rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* ===== CTA ===== */
         .cta-box {
-            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
-            color: white;
-            padding: 30px;
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            color: #fff;
             border-radius: 15px;
+            padding: 20px;
             text-align: center;
-            margin-top: 40px;
+            margin-top: 20px;
+        }
+        .cta-box p { color: #fff; font-size: 1rem; margin: 0; }
+
+        /* ===== DISCLAIMER ===== */
+        .disclaimer {
+            background: #fff8e1;
+            border: 1px solid #ffe082;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 15px;
         }
 
-        .cta-box p {
-            color: white;
-            font-size: 1.2rem;
-            margin-bottom: 0;
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
         }
 
-        .cta-box strong {
-            font-size: 1.3rem;
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-
-            .btn {
-                min-width: 200px;
-                padding: 12px 25px;
-                font-size: 15px;
-            }
-
-            ul, ol {
-                margin: 15px 20px;
-            }
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition);
         }
+        .footer-links a:hover { color: #55efc4; }
 
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
+        .footer p {
+            color: #888;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+        }
+        .footer p a { color: #55efc4; text-decoration: none; }
 
-            .container {
-                padding: 15px;
-                border-radius: 15px;
-            }
-
-            h1 {
-                font-size: 1.4rem;
-            }
-
-            .btn {
-                min-width: 180px;
-                padding: 10px 20px;
-                font-size: 14px;
-            }
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .header-card h1 { font-size: 1.3rem; }
+            .content-card { padding: 20px 15px; }
+            .btn { min-width: 160px; font-size: 0.85rem; padding: 10px 18px; }
+            ul, ol { margin: 10px 15px; }
+            .top-bar { padding: 8px 12px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>تحميل واتساب جي بي التحديث الجديد 2026 – GBWhatsApp ضد الحظر مجانًا</h1>
 
-        <div class="feature-image">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWPozmGBTv30nmmr4Ev3TqZP7IptAax8b8quyhwVF3K9GDRmHNlKIYEh_MdoI4iM2Tap3jn9FQGhCOHFu4LatRLSqdcvEqwvzW1zlXYm_xbUh2sZ5Wqgj6nMnwB5PfsEt2F_Bhmk4wcufNPXaYpvAM1k3M5oMLYql9JSyYf7ue9Osig2C3txq0jZJhu3it/s768/GBWhatsapp-apk.webp" 
-                 alt="تحميل واتساب جي بي التحديث الجديد GBWhatsApp 2025 ضد الحظر مجانًا" 
-                 title="abu saleh gbwhatsapp">
-        </div>
-
-        <p>تم إصدار تحديث جديد من تطبيق <strong>GBWhatsApp</strong> نسخة <strong>2026</strong>، وهي نسخة مطورة من واتساب الرسمي تجمع بين مزايا <strong>الواتساب الأخضر</strong> و<strong>واتساب بلس</strong>، بالإضافة إلى مميزات حصرية من تطوير <strong>أبو صالح</strong>. يدعم هذا الإصدار الحماية من الحظر ويوفر تجربة محسّنة مع مجموعة من الإضافات الاحترافية.</p>
-
-        <h2>ما هو واتساب جي بي GBWhatsApp؟</h2>
-        <p><strong>GBWhatsApp</strong> هو نسخة معدلة من تطبيق واتساب الأصلي، تتيح للمستخدمين المزيد من خيارات التخصيص، وتحسينات الخصوصية، وإرسال ملفات أكبر، والعديد من الأدوات التي لا توفرها النسخة الرسمية. هذه النسخة تم تطويرها بواسطة المطور <strong>أبو صالح</strong> وتُعد من أكثر النسخ استقرارًا وأمانًا.</p>
-
-        <h2>مميزات GB WhatsApp – الإصدار الجديد 2025</h2>
-        <ul>
-            <li>✅ تحديث ضد الحظر وآمن تمامًا.</li>
-            <li>🕵️‍♂️ إخفاء الظهور، وصح القراءة، ومشاهدة الحالات.</li>
-            <li>🔒 قفل التطبيق أو محادثات محددة ببصمة أو كلمة مرور.</li>
-            <li>📎 إرسال ملفات بحجم يصل إلى 100 ميغابايت.</li>
-            <li>🎨 متجر ثيمات مع قابلية تخصيص الواجهة.</li>
-            <li>🔁 جدولة الرسائل والردود التلقائية.</li>
-            <li>🖼️ إرسال صور وفيديوهات بجودة كاملة بدون ضغط.</li>
-            <li>🚫 منع حذف الرسائل والحالات.</li>
-            <li>📍 مشاركة الموقع المباشر.</li>
-            <li>📥 دعم تثبيت حتى 100 محادثة.</li>
-            <li>📲 إرسال 90 صورة دفعة واحدة.</li>
-            <li>📢 إشعارات فورية عند تغييرات الملف الشخصي للأصدقاء.</li>
-        </ul>
-
-        <div class="download-box">
-            <h2>روابط تحميل GBWhatsApp</h2>
-            <div>
-                <a class="btn" href="https://9aleh.com/gbwhatsapp/" rel="nofollow" target="_blank">
-                    📥 تحميل GBWhatsApp
-                </a><br>
-                <a class="btn btn-green" href="https://app.9aleh.com/gbwamas" target="_blank">
-                    📥 تحميل GBWhatsApp Mas
-                </a><br>
-                <a class="btn btn-blue" href="https://app.9aleh.com/waplus" target="_blank">
-                    📥 تحميل WhatsApp Plus
-                </a><br>
-                <a class="btn btn-orange" href="https://app.9aleh.com/ogwapro" target="_blank">
-                    📥 تنزيل OGWhatsApp
-                </a>
-            </div>
-        </div>
-
-        <h2>طريقة تثبيت GBWhatsApp APK</h2>
-        <ol>
-            <li>قم بتنزيل ملف APK من الرابط أعلاه.</li>
-            <li>اذهب إلى <strong>إعدادات الهاتف</strong> ← <em>الأمان</em> ← فعّل خيار "تثبيت التطبيقات من مصادر غير معروفة".</li>
-            <li>افتح الملف الذي تم تحميله واضغط على "تثبيت".</li>
-            <li>بعد التثبيت، أدخل رقمك وابدأ الاستخدام مباشرة.</li>
-        </ol>
-
-        <blockquote>
-            <strong>ملاحظة:</strong> لا تحذف النسخة القديمة أثناء التحديث لضمان عدم فقدان المحادثات.
-        </blockquote>
-
-        <h2>كيفية عمل نسخة احتياطية للمحادثات</h2>
-        <ol>
-            <li>افتح التطبيق واذهب إلى: <em>إضافات GB</em> ← <strong>النسخ الاحتياطي</strong>.</li>
-            <li>بعد حفظ النسخة، اذهب إلى مجلد: <code>GBWhatsApp/GBBackups</code>.</li>
-            <li>احفظ الملف <code>com.gbwhatsapp.zip</code> في مكان آمن (كمبيوتر، سحابة، ذاكرة خارجية).</li>
-        </ol>
-
-        <h2>نقل GBWhatsApp إلى هاتف جديد</h2>
-        <ol>
-            <li>من الهاتف القديم: أنشئ نسخة احتياطية من الإعدادات.</li>
-            <li>انسخ الملف إلى الهاتف الجديد داخل نفس المجلد.</li>
-            <li>ثبّت النسخة الجديدة واضغط "استعادة النسخة الاحتياطية".</li>
-        </ol>
-
-        <div class="faq-section">
-            <h2>الأسئلة الشائعة</h2>
-
-            <div class="faq-item">
-                <h3>هل واتساب جي بي آمن؟</h3>
-                <p>نعم، بشرط تحميل النسخة من مصدر موثوق مثل موقع أبو صالح. يتم فحص النسخة من الأكواد الضارة والتأكد من أمانها التام.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>هل يمكن استخدامه مع واتساب الرسمي؟</h3>
-                <p>نعم، يمكنك استخدامه إلى جانب التطبيق الرسمي باستخدام رقم مختلف.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>هل يعمل على أجهزة iPhone؟</h3>
-                <p>لا، التطبيق يعمل فقط على أجهزة <strong>Android</strong>. لا يتوفر إصدار رسمي لنظام iOS.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>لماذا لا يمكن تحديثه من المتجر؟</h3>
-                <p>كونه إصدار معدل، فهو غير متوفر على Google Play. يمكنك تحميل آخر إصدار دائمًا من موقعنا بروابط مباشرة وآمنة.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="cta-box">
-            <p>📌 <strong>هل ترغب في تحميل النسخة الآن؟</strong><br>
-            انتقل إلى روابط التحميل أعلاه للحصول على أحدث إصدار من <strong>GBWhatsApp</strong> مجانًا ومباشرة.</p>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <a href="https://app.9aleh.com" class="logo">
+            <i class="fab fa-whatsapp"></i>
+            <span data-lang="ar">تطبيقات أبو صالح</span>
+            <span data-lang="en">Abu Saleh Apps</span>
+        </a>
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="setLanguage('ar')" id="btn-ar">عربي</button>
+            <button class="lang-btn" onclick="setLanguage('en')" id="btn-en">English</button>
         </div>
     </div>
+
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header-card">
+            <h1 data-lang="ar">تحميل واتساب جي بي التحديث الجديد 2026<br>GBWhatsApp ضد الحظر مجانًا</h1>
+            <h1 data-lang="en">Download GBWhatsApp Latest Update 2026<br>Anti-Ban Version Free</h1>
+            <div class="header-badge" data-lang="ar">✨ نسخة أبو صالح المطورة</div>
+            <div class="header-badge" data-lang="en">✨ Abu Saleh Developed Version</div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content-card">
+            <div class="feature-image">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWPozmGBTv30nmmr4Ev3TqZP7IptAax8b8quyhwVF3K9GDRmHNlKIYEh_MdoI4iM2Tap3jn9FQGhCOHFu4LatRLSqdcvEqwvzW1zlXYm_xbUh2sZ5Wqgj6nMnwB5PfsEt2F_Bhmk4wcufNPXaYpvAM1k3M5oMLYql9JSyYf7ue9Osig2C3txq0jZJhu3it/s768/GBWhatsapp-apk.webp" 
+                     alt="GBWhatsApp APK" loading="lazy">
+            </div>
+
+            <p data-lang="ar">تم إصدار تحديث جديد من تطبيق <strong>GBWhatsApp</strong> نسخة <strong>2026</strong>، وهي نسخة مطورة تجمع بين مزايا الواتساب الرسمي وواتساب بلس، مع مميزات حصرية من تطوير <strong>أبو صالح</strong>.</p>
+            <p data-lang="en">A new update of <strong>GBWhatsApp</strong> version <strong>2026</strong> has been released, combining official WhatsApp and WhatsApp Plus features with exclusive additions by <strong>Abu Saleh</strong>.</p>
+
+            <h2 data-lang="ar">ما هو واتساب جي بي؟</h2>
+            <h2 data-lang="en">What is GBWhatsApp?</h2>
+            <p data-lang="ar"><strong>GBWhatsApp</strong> هو نسخة معدلة من واتساب تتيح خيارات تخصيص أكثر، خصوصية محسنة، وإرسال ملفات أكبر.</p>
+            <p data-lang="en"><strong>GBWhatsApp</strong> is a modified WhatsApp version with more customization, improved privacy, and larger file sharing.</p>
+
+            <h2 data-lang="ar">مميزات GB WhatsApp</h2>
+            <h2 data-lang="en">GB WhatsApp Features</h2>
+            <ul>
+                <li data-lang="ar">✅ تحديث ضد الحظر وآمن تمامًا</li>
+                <li data-lang="en">✅ Anti-ban and completely safe</li>
+                <li data-lang="ar">🕵️ إخفاء الظهور وعلامات القراءة</li>
+                <li data-lang="en">🕵️ Hide online status and read receipts</li>
+                <li data-lang="ar">🔒 قفل المحادثات ببصمة أو كلمة مرور</li>
+                <li data-lang="en">🔒 Lock chats with fingerprint or password</li>
+                <li data-lang="ar">📎 إرسال ملفات حتى 100 ميغابايت</li>
+                <li data-lang="en">📎 Send files up to 100MB</li>
+                <li data-lang="ar">🎨 متجر ثيمات وتخصيص كامل</li>
+                <li data-lang="en">🎨 Theme store and full customization</li>
+                <li data-lang="ar">🔁 جدولة الرسائل والرد التلقائي</li>
+                <li data-lang="en">🔁 Message scheduling and auto-reply</li>
+                <li data-lang="ar">🖼️ إرسال صور بجودة كاملة بدون ضغط</li>
+                <li data-lang="en">🖼️ Send full quality images without compression</li>
+                <li data-lang="ar">🚫 منع حذف الرسائل والحالات</li>
+                <li data-lang="en">🚫 Prevent message and status deletion</li>
+            </ul>
+
+            <!-- DOWNLOAD -->
+            <div class="download-box">
+                <h2 data-lang="ar">روابط التحميل</h2>
+                <h2 data-lang="en">Download Links</h2>
+                <a class="btn btn-green" href="https://9aleh.com/gbwhatsapp/" rel="nofollow" target="_blank">📥 <span data-lang="ar">تحميل GBWhatsApp</span><span data-lang="en">Download GBWhatsApp</span></a><br>
+                <a class="btn btn-purple" href="https://app.9aleh.com/gbwamas" target="_blank">📥 <span data-lang="ar">تحميل GBWhatsApp Mas</span><span data-lang="en">Download GBWhatsApp Mas</span></a><br>
+                <a class="btn btn-blue" href="https://app.9aleh.com/waplus" target="_blank">📥 <span data-lang="ar">تحميل WhatsApp Plus</span><span data-lang="en">Download WhatsApp Plus</span></a><br>
+                <a class="btn btn-orange" href="https://app.9aleh.com/ogwapro" target="_blank">📥 <span data-lang="ar">تنزيل OGWhatsApp</span><span data-lang="en">Download OGWhatsApp</span></a>
+            </div>
+
+            <h2 data-lang="ar">طريقة التثبيت</h2>
+            <h2 data-lang="en">Installation Guide</h2>
+            <ol>
+                <li data-lang="ar">نزّل ملف APK من الرابط أعلاه.</li>
+                <li data-lang="en">Download the APK file from the link above.</li>
+                <li data-lang="ar">فعّل "مصادر غير معروفة" من إعدادات الهاتف.</li>
+                <li data-lang="en">Enable "Unknown Sources" in phone settings.</li>
+                <li data-lang="ar">افتح الملف واضغط "تثبيت".</li>
+                <li data-lang="en">Open the file and tap "Install".</li>
+                <li data-lang="ar">أدخل رقمك وابدأ الاستخدام.</li>
+                <li data-lang="en">Enter your number and start using.</li>
+            </ol>
+
+            <blockquote>
+                <strong data-lang="ar">ملاحظة:</strong><strong data-lang="en">Note:</strong> 
+                <span data-lang="ar">لا تحذف النسخة القديمة أثناء التحديث.</span>
+                <span data-lang="en">Do not delete the old version during update.</span>
+            </blockquote>
+
+            <!-- FAQ ACCORDION -->
+            <div class="faq-section">
+                <h2 data-lang="ar">الأسئلة الشائعة</h2>
+                <h2 data-lang="en">FAQ</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang="ar">هل واتساب جي بي آمن؟</span>
+                        <span data-lang="en">Is GBWhatsApp safe?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ar">نعم، بشرط تحميل النسخة من مصدر موثوق مثل موقع أبو صالح.</p>
+                        <p data-lang="en">Yes, as long as you download from a trusted source like Abu Saleh's website.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang="ar">هل يمكن استخدامه مع واتساب الرسمي؟</span>
+                        <span data-lang="en">Can I use it with official WhatsApp?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ar">نعم، يمكنك استخدامه إلى جانب التطبيق الرسمي برقم مختلف.</p>
+                        <p data-lang="en">Yes, you can use it alongside the official app with a different number.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang="ar">هل يعمل على iPhone؟</span>
+                        <span data-lang="en">Does it work on iPhone?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ar">لا، يعمل فقط على أجهزة Android.</p>
+                        <p data-lang="en">No, it only works on Android devices.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang="ar">لماذا لا يمكن تحديثه من المتجر؟</span>
+                        <span data-lang="en">Why can't I update from the store?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ar">كونه إصدار معدل، فهو غير متوفر على Google Play.</p>
+                        <p data-lang="en">Being a modified version, it's not available on Google Play.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-box">
+                <p data-lang="ar">📌 <strong>جاهز للتحميل؟</strong> انتقل لروابط التحميل أعلاه مجاناً.</p>
+                <p data-lang="en">📌 <strong>Ready to download?</strong> Go to the links above for free.</p>
+            </div>
+
+            <!-- DISCLAIMER -->
+            <div class="disclaimer">
+                <span data-lang="ar">⚠️ هذا التطبيق ليس تابعاً لشركة Meta أو WhatsApp أو Facebook. الاستخدام على مسؤوليتك الشخصية.</span>
+                <span data-lang="en">⚠️ This app is not affiliated with Meta, WhatsApp, or Facebook. Use at your own risk.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      
+        <p>
+            <span data-lang="ar">© 2026 <a href="https://app.9aleh.com">تطبيقات أبو صالح</a> - جميع الحقوق محفوظة</span>
+            <span data-lang="en">© 2026 <a href="https://app.9aleh.com">Abu Saleh Apps</a> - All rights reserved</span>
+        </p>
+        <p><span data-lang="ar">جميع التطبيقات مجانية وآمنة</span><span data-lang="en">All apps are free and safe</span></p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.classList.toggle('active', el.dataset.lang === lang);
+            });
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.documentElement.lang = lang;
+            document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+
+        function toggleFaq(question) {
+            const item = question.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // إغلاق جميع العناصر
+            document.querySelectorAll('.faq-item').forEach(faq => {
+                faq.classList.remove('active');
+            });
+            
+            // فتح العنصر المطلوب
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage(navigator.language.startsWith('ar') ? 'ar' : 'en');
+        });
+    </script>
+
 </body>
 </html>
