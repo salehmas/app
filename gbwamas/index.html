@@ -5,289 +5,405 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تنزيل جي بي واتساب ماس آخر إصدار ضد الحظر GBWhatsApp Mas</title>
     <meta name="description" content="تحميل واتساب جي بي ماس GBWhatsApp Mas 2025 نسخة ضد الحظر - آخر إصدار مع شرح التثبيت ونقل المحادثات">
+    <link rel="icon" href="https://upfileapp.9aleh.com/file/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-0X7MZRLC9D'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0X7MZRLC9D');
+    </script>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --purple: #6c5ce7;
+            --purple-dark: #5a4bd1;
+            --purple-light: #f5f2ff;
+            --purple-border: #ddd6f7;
+            --green: #00b894;
+            --dark: #1a1a2e;
+            --text: #333;
+            --shadow: 0 5px 20px rgba(0,0,0,0.06);
+            --transition: all 0.3s ease;
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Segoe UI', Tahoma, 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(180deg, #f5f2ff 0%, #ede8ff 100%);
             line-height: 1.8;
-            color: #2d3436;
-            padding: 20px;
+            color: var(--text);
             min-height: 100vh;
         }
 
+        [data-lang] { display: none !important; }
+        [data-lang].active { display: block !important; }
+        span[data-lang].active, a[data-lang].active, p[data-lang].active, strong[data-lang].active, em[data-lang].active { display: inline-block !important; }
+        div[data-lang].active, h1[data-lang].active, h2[data-lang].active, h3[data-lang].active { display: block !important; }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background: var(--dark);
+            padding: 10px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #fff;
+            font-weight: 800;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+        .logo i { color: #a29bfe; font-size: 1.2rem; }
+
+        .lang-switcher { display: flex; gap: 6px; }
+        .lang-btn {
+            background: transparent;
+            border: 1.5px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Tajawal', sans-serif;
+            white-space: nowrap;
+        }
+        .lang-btn:hover { background: rgba(255,255,255,0.1); }
+        .lang-btn.active { background: var(--purple); border-color: var(--purple); }
+
+        /* ===== CONTAINER ===== */
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            background: #ffffff;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        /* ===== HEADER CARD ===== */
+        .header-card {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 50%, #4a3d8f 100%);
+            color: #fff;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            color: #2d3436;
+            padding: 40px 25px;
             text-align: center;
-            margin-bottom: 30px;
-            line-height: 1.4;
-            border-bottom: 3px solid #00b894;
-            padding-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 25px;
         }
 
-        h2 {
-            font-size: 1.5rem;
-            color: #00b894;
-            margin: 40px 0 20px;
-            padding-right: 15px;
-            border-right: 4px solid #00b894;
+        .header-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(108,92,231,0.15), transparent 70%);
+            animation: rotate 25s linear infinite;
         }
 
-        h3 {
-            font-size: 1.2rem;
-            color: #2d3436;
-            margin-bottom: 15px;
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
-        p {
+        .header-card h1 {
+            font-size: 1.7rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.5;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 5px 18px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== CONTENT CARD ===== */
+        .content-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px 25px;
+            box-shadow: var(--shadow);
             margin-bottom: 20px;
-            font-size: 1.05rem;
         }
 
         .feature-image {
             text-align: center;
-            margin: 30px 0;
+            margin: 10px 0 20px;
         }
-
         .feature-image img {
             max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
         }
 
-        .feature-image img:hover {
-            transform: scale(1.02);
+        h2 {
+            font-size: 1.25rem;
+            color: var(--purple-dark);
+            margin: 25px 0 12px;
+            padding-right: 12px;
+            border-right: 4px solid var(--purple);
+            font-weight: 800;
         }
 
-        ul, ol {
-            margin: 20px 0 20px 40px;
-        }
+        p { margin-bottom: 12px; font-size: 0.95rem; color: #555; }
 
-        li {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
+        ul, ol { margin: 12px 25px; padding-right: 5px; }
+        li { margin-bottom: 8px; font-size: 0.9rem; color: #555; }
 
         code {
-            background: #f8f9fa;
-            padding: 5px 10px;
+            background: var(--purple-light);
+            padding: 3px 8px;
             border-radius: 5px;
-            font-family: 'Courier New', monospace;
-            color: #e17055;
-            font-size: 0.95rem;
+            color: var(--purple-dark);
+            font-size: 0.85rem;
+            border: 1px solid var(--purple-border);
         }
 
+        /* ===== DOWNLOAD BOX ===== */
         .download-box {
-            background: linear-gradient(145deg, #f9f9f9, #f1f1f1);
+            background: var(--purple-light);
+            border: 2px solid var(--purple-border);
             border-radius: 15px;
-            border: 2px solid #00b894;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
-            margin: 40px 0;
-            padding: 30px 20px;
+            padding: 20px;
             text-align: center;
+            margin: 20px 0;
         }
 
         .download-box h3 {
-            color: #2d3436;
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        .download-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
+            font-size: 1.1rem;
+            color: var(--purple-dark);
+            margin-bottom: 15px;
+            font-weight: 800;
         }
 
         .btn {
-            border-radius: 8px;
-            color: white;
             display: inline-block;
-            font-size: 15px;
-            font-weight: 700;
-            min-width: 200px;
-            padding: 14px 30px;
+            margin: 6px 0;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.9rem;
             text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
+            transition: var(--transition);
+            min-width: 200px;
+            white-space: nowrap;
         }
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
-        }
+        .btn-purple { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: #fff; box-shadow: 0 4px 12px rgba(108,92,231,0.3); }
+        .btn-purple:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(108,92,231,0.4); }
+        .btn-green { background: linear-gradient(135deg, #00b894, #00cec9); color: #fff; box-shadow: 0 4px 12px rgba(0,184,148,0.3); }
+        .btn-green:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,184,148,0.4); }
+        .btn-orange { background: linear-gradient(135deg, #e17055, #fab1a0); color: #fff; box-shadow: 0 4px 12px rgba(225,112,85,0.3); }
+        .btn-orange:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(225,112,85,0.4); }
+        .btn-blue { background: linear-gradient(135deg, #0984e3, #74b9ff); color: #fff; box-shadow: 0 4px 12px rgba(9,132,227,0.3); }
+        .btn-blue:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(9,132,227,0.4); }
 
-        .btn-purple {
-            background: #6c5ce7;
-            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.35);
-        }
-
-        .btn-green {
-            background: #00b894;
-            box-shadow: 0 5px 15px rgba(0, 184, 148, 0.35);
-        }
-
-        .btn-orange {
-            background: #e17055;
-            box-shadow: 0 5px 15px rgba(225, 112, 85, 0.35);
-        }
-
-        .btn-blue {
-            background: #0984e3;
-            box-shadow: 0 5px 15px rgba(9, 132, 227, 0.35);
-        }
-
+        /* ===== NOTE BOX ===== */
         .note-box {
-            background: #fff3e0;
-            border-right: 4px solid #ff9800;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px 0;
+            background: #fff8e1;
+            border: 1.5px solid #ffe082;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin: 20px 0;
         }
 
         .note-box h2 {
             border-right: none;
             color: #e65100;
             margin-top: 0;
+            padding-right: 0;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
+        /* ===== DISCLAIMER ===== */
+        .disclaimer {
+            background: #fff8e1;
+            border: 1px solid #ffe082;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 15px;
+        }
 
-            h1 {
-                font-size: 1.5rem;
-            }
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 30px;
+        }
 
-            h2 {
-                font-size: 1.2rem;
-            }
+        .footer p { color: #888; font-size: 0.85rem; margin-bottom: 5px; }
+        .footer p a { color: #a29bfe; text-decoration: none; }
 
-            .btn {
-                min-width: 150px;
-                padding: 12px 20px;
-                font-size: 14px;
-            }
-
-            ul, ol {
-                margin: 15px 0 15px 20px;
-            }
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .header-card h1 { font-size: 1.3rem; }
+            .content-card { padding: 20px 15px; }
+            .btn { min-width: 160px; font-size: 0.85rem; padding: 10px 18px; }
+            ul, ol { margin: 10px 15px; }
+            .top-bar { padding: 8px 12px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>تنزيل جي بي واتساب ماس آخر إصدار ضد الحظر GBWhatsApp Mas</h1>
 
-        <div class="feature-image">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIXRmlrEjv6o7vGCucqmdRCJggA2YfcolGqoZx8rHaapQm5iWRZ_r1o28f_mC6JguYNA99NnH_jh4xLig9SO9WZsWdbdvpHRgCbzVm4G9IjcKeeQE-WEw6uwO8Dzv-PVL8Si-HUbWYVxWupQPh2lTskF90no9hazFrmKzt4-MtUaJOcFAhs2MMiPM75OFP/s1080/gbwhatsapp-mas-apk.png" 
-                 alt="تحميل واتساب جي بي ماس GBWhatsApp Mas 2025 نسخة ضد الحظر" 
-                 title="GBWhatsApp Mas APK">
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <a href="https://app.9aleh.com" class="logo">
+            <i class="fab fa-whatsapp"></i>
+            <span data-lang="ar">تطبيقات أبو صالح</span>
+            <span data-lang="en">Abu Saleh Apps</span>
+        </a>
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="setLanguage('ar')" id="btn-ar">عربي</button>
+            <button class="lang-btn" onclick="setLanguage('en')" id="btn-en">English</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header-card">
+            <h1 data-lang="ar">تنزيل جي بي واتساب ماس آخر إصدار<br>ضد الحظر GBWhatsApp Mas</h1>
+            <h1 data-lang="en">Download GBWhatsApp Mas Latest Version<br>Anti-Ban Edition</h1>
+            <div class="header-badge" data-lang="ar">✨ نسخة مضادة للحظر</div>
+            <div class="header-badge" data-lang="en">✨ Anti-Ban Version</div>
         </div>
 
-        <p>واتساب جي بي ماس (GBWhatsApp Mas) هو نسخة معدلة من تطبيق واتساب الرسمي تتيح لك استخدام التطبيق دون الحاجة إلى ربط الأجهزة، كما تتميز بكونها نسخة مضادة للحظر وتحتوي على جميع مميزات واتساب جي بي، وواتس اب بلس. في هذه المقالة، سنتعرف على كيفية تحميل وتثبيت GBWhatsApp Mas، وطريقة نقل المحادثات من التطبيق الرسمي إليه، وكذلك كيفية تحديثه بسهولة.</p>
+        <!-- CONTENT -->
+        <div class="content-card">
+            <div class="feature-image">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIXRmlrEjv6o7vGCucqmdRCJggA2YfcolGqoZx8rHaapQm5iWRZ_r1o28f_mC6JguYNA99NnH_jh4xLig9SO9WZsWdbdvpHRgCbzVm4G9IjcKeeQE-WEw6uwO8Dzv-PVL8Si-HUbWYVxWupQPh2lTskF90no9hazFrmKzt4-MtUaJOcFAhs2MMiPM75OFP/s1080/gbwhatsapp-mas-apk.png" 
+                     alt="GBWhatsApp Mas APK" loading="lazy">
+            </div>
 
-        <h2>✨ مميزات واتساب GB Mas</h2>
-        <ul>
-            <li><strong>تشغيل بدون ربط الأجهزة:</strong> يمكنك استخدام التطبيق على هاتفك مباشرة دون الحاجة لربطه بجهاز آخر كواتساب ويب أو كمرافق.</li>
-            <li><strong>مضاد للحظر:</strong> يأتي مزودًا بخصائص أمان تقلل احتمالية حظر الرقم، مما يوفّر استخدامًا أكثر استقرارًا.</li>
-            <li><strong>تحديثات دورية:</strong> يتمتع بدعم مستمر وتحديثات منتظمة لضمان وصول أحدث الميزات والتحسينات.</li>
-        </ul>
+            <p data-lang="ar">واتساب جي بي ماس (GBWhatsApp Mas) هو نسخة معدلة من تطبيق واتساب الرسمي تتيح لك استخدام التطبيق دون الحاجة إلى ربط الأجهزة، كما تتميز بكونها نسخة مضادة للحظر وتحتوي على جميع مميزات واتساب جي بي وواتساب بلس.</p>
+            <p data-lang="en">GBWhatsApp Mas is a modified version of the official WhatsApp that allows you to use the app without device linking, featuring anti-ban protection and all GBWhatsApp and WhatsApp Plus features.</p>
 
-        <h2>📥 خطوات تحميل وتثبيت واتساب GB Mas</h2>
-        <p>اتبع الخطوات التالية بعناية لضمان التثبيت السليم:</p>
-        <ol>
-            <li><strong>تعطيل حماية Google Play:</strong><br>
-                قبل البدء، قم بإيقاف حماية "Play Protect" لتجنب منع التثبيت.
-            </li>
-            <li><strong>تثبيت GBWA Activator (النسخة الأولى):</strong><br>
-                قم بتحميل وتثبيت هذه النسخة.<br>
-                أدخل رقم هاتفك وسجّل الدخول.<br>
-                إذا كنت تستخدم نفس الرقم في الواتساب الرسمي، ستتلقى رمز التفعيل عبر الرسائل أو التطبيق.
-            </li>
-            <li><strong>تثبيت النسخة النهائية GBWhatsApp Mas (النسخة الثانية):</strong><br>
-                بعد التفعيل، وعند طلب اسم المستخدم، قم بتنزيل وتثبيت هذه النسخة.<br>
-                هكذا تكتمل عملية التثبيت.
-            </li>
-        </ol>
+            <h2 data-lang="ar">✨ مميزات واتساب GB Mas</h2>
+            <h2 data-lang="en">✨ GB Mas Features</h2>
+            <ul>
+                <li data-lang="ar"><strong>تشغيل بدون ربط الأجهزة:</strong> استخدم التطبيق مباشرة دون الحاجة لربطه بجهاز آخر.</li>
+                <li data-lang="en"><strong>No device linking:</strong> Use the app directly without linking to another device.</li>
+                <li data-lang="ar"><strong>مضاد للحظر:</strong> خصائص أمان تقلل احتمالية حظر الرقم.</li>
+                <li data-lang="en"><strong>Anti-ban:</strong> Security features reduce the chance of account ban.</li>
+                <li data-lang="ar"><strong>تحديثات دورية:</strong> دعم مستمر وتحديثات منتظمة.</li>
+                <li data-lang="en"><strong>Regular updates:</strong> Continuous support and frequent updates.</li>
+            </ul>
 
-        <!-- صندوق التحميل الرئيسي -->
-        <div class="download-box">
-            <h3>⬇️ روابط تحميل GBWhatsApp Mas</h3>
-            <div class="download-buttons">
-                <a href="https://9aleh.com/gbwhatsapp-mas/" class="btn btn-purple" rel="nofollow" target="_blank">
-                    📥 تحميل GBWA Mas
-                </a>
-                <a href="https://app.9aleh.com/gbwapro" class="btn btn-green" target="_blank">
-                    📥 تحميل GBWA Pro
-                </a>
-                <a href="https://app.9aleh.com/ogwapro" class="btn btn-orange" target="_blank">
-                    📥 تحميل OGWA Pro
-                </a>
-                <a href="https://app.9aleh.com/waplus" class="btn btn-blue" target="_blank">
-                    📥 تحميل WA Plus
-                </a>
+            <h2 data-lang="ar">📥 خطوات التحميل والتثبيت</h2>
+            <h2 data-lang="en">📥 Download & Installation Steps</h2>
+            <ol>
+                <li data-lang="ar"><strong>تعطيل حماية Google Play:</strong> أوقف "Play Protect" لتجنب منع التثبيت.</li>
+                <li data-lang="en"><strong>Disable Google Play Protect:</strong> Turn off Play Protect to avoid installation block.</li>
+                <li data-lang="ar"><strong>تثبيت GBWA Activator:</strong> حمّل النسخة الأولى وأدخل رقمك وسجّل الدخول.</li>
+                <li data-lang="en"><strong>Install GBWA Activator:</strong> Download the first version, enter your number and log in.</li>
+                <li data-lang="ar"><strong>تثبيت النسخة النهائية:</strong> بعد التفعيل، نزّل GBWhatsApp Mas وثبّتها.</li>
+                <li data-lang="en"><strong>Install final version:</strong> After activation, download and install GBWhatsApp Mas.</li>
+            </ol>
+
+            <!-- DOWNLOAD -->
+            <div class="download-box">
+                <h3 data-lang="ar">⬇️ روابط تحميل GBWhatsApp Mas</h3>
+                <h3 data-lang="en">⬇️ GBWhatsApp Mas Download Links</h3>
+                <a class="btn btn-purple" href="https://9aleh.com/gbwhatsapp-mas/" rel="nofollow" target="_blank">📥 <span data-lang="ar">تحميل GBWA Mas</span><span data-lang="en">Download GBWA Mas</span></a><br>
+                <a class="btn btn-green" href="https://app.9aleh.com/gbwapro" target="_blank">📥 <span data-lang="ar">تحميل GBWA Pro</span><span data-lang="en">Download GBWA Pro</span></a><br>
+                <a class="btn btn-orange" href="https://app.9aleh.com/ogwapro" target="_blank">📥 <span data-lang="ar">تحميل OGWA Pro</span><span data-lang="en">Download OGWA Pro</span></a><br>
+                <a class="btn btn-blue" href="https://app.9aleh.com/waplus" target="_blank">📥 <span data-lang="ar">تحميل WA Plus</span><span data-lang="en">Download WA Plus</span></a>
+            </div>
+
+            <h2 data-lang="ar">🔄 نقل المحادثات من واتساب الرسمي</h2>
+            <h2 data-lang="en">🔄 Transfer Chats from Official WhatsApp</h2>
+            <ol>
+                <li data-lang="ar"><strong>نسخ احتياطي:</strong> قبل تثبيت GBWA Activator، خذ نسخة احتياطية أو غيّر اسم مجلد WhatsApp.</li>
+                <li data-lang="en"><strong>Backup:</strong> Before installing GBWA Activator, backup or rename WhatsApp folder.</li>
+                <li data-lang="ar"><strong>نقل الملفات:</strong> انسخ من <code>android > media > com.whatsapp > WhatsApp</code> إلى <code>android > media > com.universe.messenger > GBWhatsApp</code></li>
+                <li data-lang="en"><strong>Transfer files:</strong> Copy from <code>android > media > com.whatsapp > WhatsApp</code> to <code>android > media > com.universe.messenger > GBWhatsApp</code></li>
+                <li data-lang="ar"><strong>استعادة النسخة:</strong> عند طلب الاستعادة، سيتم تحميل جميع المحادثات.</li>
+                <li data-lang="en"><strong>Restore backup:</strong> All chats will be loaded when prompted.</li>
+            </ol>
+
+            <!-- NOTE -->
+            <div class="note-box">
+                <h2 data-lang="ar">⚠️ ملاحظة مهمة</h2>
+                <h2 data-lang="en">⚠️ Important Note</h2>
+                <ul>
+                    <li data-lang="ar"><strong>GBWA Activator:</strong> مخصص لتفعيل الرقم فقط ويحتوي على إعلانات.</li>
+                    <li data-lang="en"><strong>GBWA Activator:</strong> For number activation only, contains ads.</li>
+                    <li data-lang="ar"><strong>GBWhatsApp Mas:</strong> الإصدار النهائي بدون إعلانات بعد التفعيل.</li>
+                    <li data-lang="en"><strong>GBWhatsApp Mas:</strong> Final version without ads after activation.</li>
+                </ul>
+            </div>
+
+            <h2 data-lang="ar">🔄 كيفية تحديث GBWhatsApp Mas</h2>
+            <h2 data-lang="en">🔄 How to Update GBWhatsApp Mas</h2>
+            <ol>
+                <li data-lang="ar">حمّل تحديث GBWhatsApp Mas.</li>
+                <li data-lang="en">Download the GBWhatsApp Mas update.</li>
+                <li data-lang="ar">ثبّت التحديث <strong>دون حذف النسخة القديمة</strong>.</li>
+                <li data-lang="en">Install the update <strong>without deleting the old version</strong>.</li>
+                <li data-lang="ar">سيعمل التطبيق مع الاحتفاظ بجميع محادثاتك.</li>
+                <li data-lang="en">The app will work with all your chats preserved.</li>
+            </ol>
+
+            <!-- DISCLAIMER -->
+            <div class="disclaimer">
+                <span data-lang="ar">⚠️ هذا التطبيق ليس تابعاً لشركة Meta أو WhatsApp أو Facebook. الاستخدام على مسؤوليتك الشخصية.</span>
+                <span data-lang="en">⚠️ This app is not affiliated with Meta, WhatsApp, or Facebook. Use at your own risk.</span>
             </div>
         </div>
-
-        <h2>🔄 طريقة نقل المحادثات من واتساب الرسمي إلى GB Mas</h2>
-        <p>إذا كنت تريد الاحتفاظ بمحادثاتك، اتبع الخطوات التالية:</p>
-        <ol>
-            <li><strong>نسخ احتياطي أو تغيير اسم المجلد:</strong><br>
-                قبل تثبيت GBWA Activator، قم بأخذ نسخة احتياطية أو غيّر اسم مجلد WhatsApp.
-            </li>
-            <li><strong>عدم طلب التفعيل مباشرة:</strong><br>
-                بعد تثبيت GBWA Activator، لا تطلب رمز التفعيل فورًا.
-            </li>
-            <li><strong>نقل ملفات المحادثات:</strong><br>
-                افتح <strong>مدير الملفات</strong> وانتقل إلى:<br>
-                <code>android &gt; media &gt; com.whatsapp &gt; WhatsApp</code><br>
-                انسخ جميع الملفات داخل المجلد.<br>
-                ثم انتقل إلى المسار:<br>
-                <code>android &gt; media &gt; com.universe.messenger &gt; GBWhatsApp</code><br>
-                إذا لم يكن موجودًا، أنشئ المجلد، ثم الصق الملفات بداخله.
-            </li>
-            <li><strong>استعادة النسخة الاحتياطية:</strong><br>
-                عند طلب الاستعادة، سيتم تحميل جميع المحادثات داخل GBWA Activator.<br>
-                بعد ذلك، ثبّت نسخة GBWhatsApp Mas وستكون المحادثات متاحة كما هي.
-            </li>
-        </ol>
-
-        <div class="note-box">
-            <h2>⚠️ ملاحظة مهمة</h2>
-            <ul>
-                <li><strong>GBWA Activator:</strong> هو الإصدار الأول المخصص لتفعيل الرقم فقط، ويحتوي على إعلانات.</li>
-                <li><strong>GBWhatsApp Mas:</strong> هو الإصدار النهائي الذي يقدم جميع الميزات بدون إعلانات بعد تفعيل الرقم.</li>
-            </ul>
-        </div>
-
-        <h2>🔄 كيفية تحديث GBWhatsApp Mas APK</h2>
-        <ol>
-            <li>حمّل تحديث GBWhatsApp Mas.</li>
-            <li>ثبّت التحديث مباشرة <strong>دون حذف النسخة القديمة</strong>.</li>
-            <li>سيعمل التطبيق بالإصدار الجديد مع الاحتفاظ بجميع محادثاتك وبياناتك.</li>
-        </ol>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            <span data-lang="ar">© 2026 <a href="https://app.9aleh.com">تطبيقات أبو صالح</a> - جميع الحقوق محفوظة</span>
+            <span data-lang="en">© 2026 <a href="https://app.9aleh.com">Abu Saleh Apps</a> - All rights reserved</span>
+        </p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.classList.toggle('active', el.dataset.lang === lang);
+            });
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.documentElement.lang = lang;
+            document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage(navigator.language.startsWith('ar') ? 'ar' : 'en');
+        });
+    </script>
+
 </body>
 </html>
