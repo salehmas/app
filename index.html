@@ -2,374 +2,936 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>قريبًا | MasMods</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيقات واتساب المعدلة - أحدث الإصدارات 2026</title>
+    <meta name="description" content="حمّل أفضل نسخ واتساب المعدلة - GBWhatsApp, GBWhatsApp Mas, OGWhatsApp Pro, WhatsApp Plus - أحدث الإصدارات 2026">
+    <meta name="keywords" content="واتساب معدل, GBWhatsApp, OGWhatsApp, WhatsApp Plus, تحميل واتساب">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://upfileapp.9aleh.com/file/img/favicon.ico" type="image/x-icon">
+    
+    <!-- الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- أيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0X7MZRLC9D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0X7MZRLC9D');
+</script>
 
     <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #00b894;
+            --accent: #0984e3;
+            --orange: #e17055;
+            --dark: #2d3436;
+            --light: #f8f9fa;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100%;
-            overflow-x: hidden;
-        }
-
-        /* خلفية متحركة عصرية */
         body {
-            background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #06b6d4, #0284c7);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            font-family: 'Tajawal', sans-serif;
+            background: #f0f2f5;
+            line-height: 1.8;
+            color: var(--dark);
+            min-height: 100vh;
+            transition: all 0.3s ease;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        /* إخفاء العناصر غير النشطة */
+        [data-lang] {
+            display: none !important;
         }
 
-        /* شريط الإشعارات الأزرق */
-        .notification-bar {
-            background: rgba(0, 0, 0, 0.35);
-            backdrop-filter: blur(10px);
-            color: white;
-            text-align: center;
-            padding: 12px 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1001;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        [data-lang].active {
+            display: block !important;
         }
 
-        .notification-bar p {
-            margin: 0;
-            display: inline-block;
+        span[data-lang].active,
+        a[data-lang].active,
+        p[data-lang].active,
+        div[data-lang].active,
+        h1[data-lang].active,
+        h2[data-lang].active,
+        h3[data-lang].active {
+            display: inline-block !important;
         }
 
-        .notification-bar i {
-            margin-left: 8px;
-            font-style: normal;
-            font-size: 1.1rem;
+        div[data-lang].active {
+            display: block !important;
         }
 
-        .close-notification {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-            margin-right: 15px;
-            transition: transform 0.2s;
-        }
-
-        .close-notification:hover {
-            transform: scale(1.1);
-        }
-
-        /* شريط التنقل - القائمة في الجهة اليمنى */
-        .navbar {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 48px;
-            width: 100%;
-            z-index: 1000;
-            padding: 0.8rem 5%;
+        /* ===== الشريط العلوي ===== */
+        .top-bar {
+            background: linear-gradient(135deg, #0c0c1d 0%, #1a1a3e 100%);
+            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            border-bottom: 1px solid rgba(59, 130, 246, 0.3);
-            direction: rtl;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
         }
 
         .logo {
-            font-size: 1.3rem;
-            font-weight: bold;
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
         }
 
-        .nav-links {
+        .logo i {
+            font-size: 1.5rem;
+            color: #a29bfe;
+        }
+
+        .lang-switcher {
             display: flex;
+            gap: 8px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Tajawal', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        /* ===== الهيدر ===== */
+        .hero {
+            background: linear-gradient(135deg, #0c0c1d 0%, #1a1a3e 50%, #2d1b69 100%);
+            color: white;
+            padding: 60px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(108, 92, 231, 0.15) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #a29bfe 0%, #fd79a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #b2bec3;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease 0.4s both;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
             gap: 25px;
-            list-style: none;
+            margin-top: 20px;
+            animation: fadeInUp 0.8s ease 0.6s both;
             flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 90px;
+        }
+
+        .stat-number {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #a29bfe;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 0.78rem;
+            color: #b2bec3;
+            white-space: nowrap;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== شبكة البطاقات ===== */
+        .cards-section {
+            padding: 0 20px 30px;
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cards-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* تصميم البطاقة الجديد */
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.08),
+                0 8px 20px rgba(0, 0, 0, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--dark);
+            display: block;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 24px 24px 0 0;
+            transition: all 0.5s ease;
+            opacity: 0.8;
+        }
+
+        .card:nth-child(1)::before {
+            background: linear-gradient(90deg, #00b894, #00cec9, #55efc4);
+        }
+
+        .card:nth-child(2)::before {
+            background: linear-gradient(90deg, #6c5ce7, #a29bfe, #dcd6f7);
+        }
+
+        .card:nth-child(3)::before {
+            background: linear-gradient(90deg, #2c3e50, #636e72, #b2bec3);
+        }
+
+        .card:nth-child(4)::before {
+            background: linear-gradient(90deg, #0984e3, #74b9ff, #a8d8ea);
+        }
+
+        .card:hover {
+            transform: translateY(-20px) scale(1.02);
+            box-shadow: 
+                0 30px 80px rgba(0, 0, 0, 0.15),
+                0 15px 40px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+
+        .card:hover::before {
+            height: 6px;
+            opacity: 1;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            z-index: 5;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .card-header {
+            padding: 35px 25px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .card-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .card-icon::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border-radius: 30px;
+            z-index: 1;
+            opacity: 0.5;
+            filter: blur(20px);
+            transition: all 0.5s ease;
+        }
+
+        .card-icon.green::before {
+            background: linear-gradient(135deg, #00b894, #00cec9);
+        }
+
+        .card-icon.purple::before {
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+        }
+
+        .card-icon.gray::before {
+            background: linear-gradient(135deg, #2c3e50, #636e72);
+        }
+
+        .card-icon.blue::before {
+            background: linear-gradient(135deg, #0984e3, #74b9ff);
+        }
+
+        .card:hover .card-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .card:hover .card-icon::before {
+            opacity: 0.7;
+            filter: blur(25px);
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-version {
+            font-size: 0.85rem;
+            color: #636e72;
+            background: linear-gradient(135deg, #f8f9fa, #f1f2f6);
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-body {
+            padding: 0 25px 25px;
+        }
+
+        .card-features {
+            list-style: none;
             margin: 0;
             padding: 0;
         }
 
-        .nav-links a {
-            text-decoration: none;
-            color: #1e293b;
-            font-weight: 500;
+        .card-features li {
+            padding: 10px 12px;
+            border-bottom: 1px solid #f1f2f6;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
             transition: all 0.3s ease;
-            position: relative;
         }
 
-        .nav-links a::after {
+        .card-features li:hover {
+            background: #f8f9fa;
+            padding-right: 15px;
+        }
+
+        .card-features li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-icon {
+            margin-left: 12px;
+            font-size: 1.2rem;
+            width: 28px;
+            height: 28px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+
+        .card-footer {
+            padding: 20px 25px;
+            text-align: center;
+            border-top: 1px solid #f1f2f6;
+            background: linear-gradient(135deg, #fafbfc 0%, #f8f9fa 100%);
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            width: 100%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.5px;
+        }
+
+        .download-btn::after {
             content: '';
             position: absolute;
-            bottom: -5px;
-            right: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
-            transition: width 0.3s;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: rotate(45deg);
+            transition: 0.5s;
         }
 
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
+        .download-btn:hover::after {
+            left: 100%;
         }
 
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #3b82f6;
+        .btn-green {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+            color: white;
+            box-shadow: 
+                0 8px 20px rgba(0, 184, 148, 0.3),
+                0 4px 10px rgba(0, 184, 148, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
         }
 
-        /* زر القائمة للجوال */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: #1e3a8a;
+        .btn-green:hover {
+            box-shadow: 
+                0 12px 30px rgba(0, 184, 148, 0.5),
+                0 6px 15px rgba(0, 184, 148, 0.3);
+            transform: translateY(-3px);
         }
 
-        /* الكرت الرئيسي */
-        .card {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(5px);
-            padding: 60px 40px;
-            border-radius: 32px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+        .btn-purple {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+            box-shadow: 
+                0 8px 20px rgba(108, 92, 231, 0.3),
+                0 4px 10px rgba(108, 92, 231, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-purple:hover {
+            box-shadow: 
+                0 12px 30px rgba(108, 92, 231, 0.5),
+                0 6px 15px rgba(108, 92, 231, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .btn-gray {
+            background: linear-gradient(135deg, #2c3e50 0%, #636e72 100%);
+            color: white;
+            box-shadow: 
+                0 8px 20px rgba(44, 62, 80, 0.3),
+                0 4px 10px rgba(44, 62, 80, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-gray:hover {
+            box-shadow: 
+                0 12px 30px rgba(44, 62, 80, 0.5),
+                0 6px 15px rgba(44, 62, 80, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .btn-blue {
+            background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
+            color: white;
+            box-shadow: 
+                0 8px 20px rgba(9, 132, 227, 0.3),
+                0 4px 10px rgba(9, 132, 227, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-blue:hover {
+            box-shadow: 
+                0 12px 30px rgba(9, 132, 227, 0.5),
+                0 6px 15px rgba(9, 132, 227, 0.3);
+            transform: translateY(-3px);
+        }
+
+        /* ===== إخلاء المسؤولية ===== */
+        .disclaimer-section {
+            background: #fff8e1;
+            border: 1px solid #ffe082;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 10px auto 30px;
+            max-width: 1000px;
             text-align: center;
-            width: 90%;
-            max-width: 600px;
-            animation: fadeInUp 0.8s ease;
-            margin-top: 120px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .disclaimer-title {
+            color: #e65100;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
-        .card h1 {
-            font-size: 55px;
-            margin: 0;
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #06b6d4);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-weight: 800;
+        .disclaimer-text {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.8;
         }
 
-        .card p {
-            font-size: 18px;
-            color: #475569;
-            margin: 20px 0 35px 0;
-            line-height: 1.7;
+        /* ===== الفوتر ===== */
+        .footer {
+            background: #0c0c1d;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
         }
 
-        /* الأزرار */
-        .buttons {
+        .footer p {
+            color: #b2bec3;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #a29bfe;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fd79a8;
+        }
+
+        .footer-links {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin-bottom: 20px;
         }
 
-        .buttons a {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin: 0;
-            padding: 14px 30px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            color: white;
-            border-radius: 60px;
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s ease;
+        .footer-links a {
+            font-size: 0.9rem;
         }
 
-        .buttons a:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-        }
-
-        .buttons a i {
-            font-size: 1.1rem;
-        }
-
-        /* تذييل بسيط */
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 12px;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.75rem;
-            background: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(5px);
-        }
-
-        /* استجابة للهواتف */
+        /* ===== التجاوب ===== */
         @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
+            .hero h1 {
+                font-size: 1.8rem;
             }
 
-            .nav-links {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-stats {
                 gap: 15px;
-                padding: 20px 0 10px;
             }
 
-            .nav-links.show {
-                display: flex;
+            .cards-container {
+                grid-template-columns: 1fr;
+                padding: 0 10px;
             }
 
-            .navbar {
-                top: 44px;
-                padding: 0.7rem 5%;
+            .top-bar {
+                padding: 10px 15px;
             }
 
-            .card {
-                padding: 40px 25px;
-                margin-top: 110px;
+            .logo span {
+                font-size: 1rem;
             }
 
-            .card h1 {
-                font-size: 38px;
-            }
-
-            .card p {
-                font-size: 15px;
-            }
-
-            .buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .buttons a {
-                width: 80%;
-                justify-content: center;
+            .card-icon {
+                width: 85px;
+                height: 85px;
             }
         }
 
         @media (max-width: 480px) {
-            .card {
-                margin-top: 100px;
-                padding: 30px 20px;
+            .hero {
+                padding: 40px 15px 80px;
             }
-            
-            .card h1 {
-                font-size: 32px;
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 1.2rem;
+            }
+
+            .lang-btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
+            .card-icon {
+                width: 75px;
+                height: 75px;
+            }
+
+            .card-header {
+                padding: 25px 20px 15px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- شريط الإشعارات الأزرق -->
-    <div class="notification-bar" id="notificationBar">
-        <i>🚀</i>
-        <p>نعمل على تحسين الموقع ليكون أفضل لك - قريباً</p>
-        <button class="close-notification" onclick="closeNotification()">✕</button>
-    </div>
-
-    <!-- شريط التنقل - القائمة في الجهة اليمنى -->
-    <nav class="navbar">
-        <div class="logo">MasMods</div>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#" class="active">الرئيسية</a></li>
-          
-        </ul>
-    </nav>
-
-    <!-- الكرت الرئيسي -->
-    <div class="card">
-        <h1>قريبًا</h1>
-        <p>نعمل على تحسين الموقع ليكون أفضل لك ✨</p>
-
-        <div class="buttons">
-            <a href="https://9aleh.com/" target="_blank">
-                <i class="fas fa-globe"></i> الموقع الرسمي
-            </a>
-            <a href="https://t.me/ALMBRMG_ALMHTRF2019" target="_blank">
-                <i class="fab fa-telegram"></i> تيليجرام
-            </a>
+    <!-- ===== الشريط العلوي ===== -->
+    <div class="top-bar">
+        <a href="https://app.9aleh.com" class="logo">
+            <i class="fab fa-whatsapp"></i>
+            <span data-lang="ar">تطبيقات أبو صالح</span>
+            <span data-lang="en">Abu Saleh Apps</span>
+        </a>
+        
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="setLanguage('ar')" id="btn-ar">
+                🇸🇦 عربي
+            </button>
+            <button class="lang-btn" onclick="setLanguage('en')" id="btn-en">
+                🇺🇸 English
+            </button>
         </div>
     </div>
 
-    <div class="footer">
-        <p>© 2026 app.9aleh.com - جميع الحقوق محفوظة</p>
-    </div>
+    <!-- ===== الهيدر ===== -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge" data-lang="ar">
+                ✨ أحدث الإصدارات 2026
+            </div>
+            <div class="hero-badge" data-lang="en">
+                ✨ Latest Versions 2026
+            </div>
+
+            <h1 data-lang="ar">تطبيقات <span>واتساب المعدلة</span><br>الأقوى والأكثر أمانًا</h1>
+            <h1 data-lang="en">Modified <span>WhatsApp Apps</span><br>The Strongest & Most Secure</h1>
+
+            <p data-lang="ar">حمّل أفضل نسخ واتساب المعدلة مع مميزات خصوصية متقدمة وتحكم كامل في تجربة المراسلة</p>
+            <p data-lang="en">Download the best modified WhatsApp versions with advanced privacy features and full control over your messaging experience</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label" data-lang="ar">نسخ متوفرة</div>
+                    <div class="stat-label" data-lang="en">Available Versions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label" data-lang="ar">مجاني بالكامل</div>
+                    <div class="stat-label" data-lang="en">Completely Free</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label" data-lang="ar">آمن بدون فيروسات</div>
+                    <div class="stat-label" data-lang="en">Safe & Virus Free</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label" data-lang="ar">تقييم المستخدمين</div>
+                    <div class="stat-label" data-lang="en">User Rating</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== شبكة البطاقات ===== -->
+    <section class="cards-section">
+        <div class="cards-container">
+
+            <!-- بطاقة GBWhatsApp -->
+            <a href="https://app.9aleh.com/gbwapro" class="card">
+                <div class="card-badge" data-lang="ar">الأكثر تحميلاً</div>
+                <div class="card-badge" data-lang="en">Most Downloaded</div>
+                <div class="card-header">
+                    <div class="card-icon green">
+                        <img src="https://app.9aleh.com/img/android.png" alt="GBWhatsApp" loading="lazy">
+                    </div>
+                    <div class="card-title">GBWhatsApp</div>
+                    <div class="card-version" data-lang="ar">الإصدار 2026 - أبو صالح</div>
+                    <div class="card-version" data-lang="en">Version 2026 - Abu Saleh</div>
+                </div>
+                <div class="card-body">
+                    <ul class="card-features">
+                        <li><span class="feature-icon">🕵️</span> <span data-lang="ar">إخفاء الظهور والقراءة</span><span data-lang="en">Hide online & read receipts</span></li>
+                        <li><span class="feature-icon">🔒</span> <span data-lang="ar">قفل المحادثات ببصمة</span><span data-lang="en">Lock chats with fingerprint</span></li>
+                        <li><span class="feature-icon">📎</span> <span data-lang="ar">إرسال ملفات حتى 100MB</span><span data-lang="en">Send files up to 100MB</span></li>
+                        <li><span class="feature-icon">🎨</span> <span data-lang="ar">متجر ثيمات متكامل</span><span data-lang="en">Integrated theme store</span></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="download-btn btn-green" data-lang="ar">📥 تحميل الآن</span>
+                    <span class="download-btn btn-green" data-lang="en">📥 Download Now</span>
+                </div>
+            </a>
+
+            <!-- بطاقة GBWhatsApp Mas -->
+            <a href="https://app.9aleh.com/gbwamas" class="card">
+                <div class="card-badge" data-lang="ar">الأحدث</div>
+                <div class="card-badge" data-lang="en">Newest</div>
+                <div class="card-header">
+                    <div class="card-icon purple">
+                        <img src="https://app.9aleh.com/img/gbwa-mas-apk.png" alt="GBWhatsApp Mas" loading="lazy">
+                    </div>
+                    <div class="card-title">GBWhatsApp Mas</div>
+                    <div class="card-version" data-lang="ar">الإصدار 2026 - ضد الحظر</div>
+                    <div class="card-version" data-lang="en">Version 2026 - Anti-ban</div>
+                </div>
+                <div class="card-body">
+                    <ul class="card-features">
+                        <li><span class="feature-icon">📱</span> <span data-lang="ar">بدون ربط الأجهزة</span><span data-lang="en">No device linking needed</span></li>
+                        <li><span class="feature-icon">🛡️</span> <span data-lang="ar">حماية مضاعفة</span><span data-lang="en">Double protection</span></li>
+                        <li><span class="feature-icon">🔄</span> <span data-lang="ar">تحديثات دورية</span><span data-lang="en">Regular updates</span></li>
+                        <li><span class="feature-icon">⚡</span> <span data-lang="ar">أداء سريع ومستقر</span><span data-lang="en">Fast & stable performance</span></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="download-btn btn-purple" data-lang="ar">📥 تحميل الآن</span>
+                    <span class="download-btn btn-purple" data-lang="en">📥 Download Now</span>
+                </div>
+            </a>
+
+            <!-- بطاقة OGWhatsApp -->
+            <a href="https://app.9aleh.com/ogwapro" class="card">
+                <div class="card-badge" data-lang="ar">النسخة الرمادية</div>
+                <div class="card-badge" data-lang="en">Gray Version</div>
+                <div class="card-header">
+                    <div class="card-icon gray">
+                        <img src="https://app.9aleh.com/img/android3.png" alt="OGWhatsApp Pro" loading="lazy">
+                    </div>
+                    <div class="card-title">OGWhatsApp Pro</div>
+                    <div class="card-version" data-lang="ar">الإصدار 2026 - النسخة الرمادية</div>
+                    <div class="card-version" data-lang="en">Version 2026 - Gray Edition</div>
+                </div>
+                <div class="card-body">
+                    <ul class="card-features">
+                        <li><span class="feature-icon">👥</span> <span data-lang="ar">حسابين بنفس الهاتف</span><span data-lang="en">Two accounts on one phone</span></li>
+                        <li><span class="feature-icon">📁</span> <span data-lang="ar">مستندات +100MB</span><span data-lang="en">Documents +100MB</span></li>
+                        <li><span class="feature-icon">✏️</span> <span data-lang="ar">تعديل الرسائل المرسلة</span><span data-lang="en">Edit sent messages</span></li>
+                        <li><span class="feature-icon">🖼️</span> <span data-lang="ar">جودة وسائط كاملة</span><span data-lang="en">Full media quality</span></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="download-btn btn-gray" data-lang="ar">📥 تحميل الآن</span>
+                    <span class="download-btn btn-gray" data-lang="en">📥 Download Now</span>
+                </div>
+            </a>
+
+            <!-- بطاقة WhatsApp Plus -->
+            <a href="https://app.9aleh.com/waplus" class="card">
+                <div class="card-badge" data-lang="ar">الأزرق</div>
+                <div class="card-badge" data-lang="en">Blue</div>
+                <div class="card-header">
+                    <div class="card-icon blue">
+                        <img src="https://app.9aleh.com/img/android2.png" alt="WhatsApp Plus" loading="lazy">
+                    </div>
+                    <div class="card-title">WhatsApp Plus</div>
+                    <div class="card-version" data-lang="ar">الإصدار V26.86 - الأزرق</div>
+                    <div class="card-version" data-lang="en">Version V26.86 - Blue</div>
+                </div>
+                <div class="card-body">
+                    <ul class="card-features">
+                        <li><span class="feature-icon">🎨</span> <span data-lang="ar">+4000 ثيم متنوع</span><span data-lang="en">+4000 diverse themes</span></li>
+                        <li><span class="feature-icon">📆</span> <span data-lang="ar">جدولة الرسائل</span><span data-lang="en">Message scheduling</span></li>
+                        <li><span class="feature-icon">🌍</span> <span data-lang="ar">ترجمة تلقائية</span><span data-lang="en">Auto translation</span></li>
+                        <li><span class="feature-icon">📊</span> <span data-lang="ar">إحصائيات المجموعات</span><span data-lang="en">Group statistics</span></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="download-btn btn-blue" data-lang="ar">📥 تحميل الآن</span>
+                    <span class="download-btn btn-blue" data-lang="en">📥 Download Now</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ===== إخلاء المسؤولية ===== -->
+    <section class="disclaimer-section">
+        <div class="disclaimer-title">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span data-lang="ar">إخلاء المسؤولية</span>
+            <span data-lang="en">Disclaimer</span>
+        </div>
+        <div class="disclaimer-text" data-lang="ar">
+            استخدام النسخ المعدلة من واتساب قد يؤدي إلى حظر حسابك من قبل الشركة الرسمية. هذا الموقع غير تابع لشركة Meta أو WhatsApp أو Facebook. جميع التطبيقات المقدمة هي نسخ معدلة من تطوير مطورين مستقلين، وتحميلها واستخدامها يتم على مسؤوليتك الشخصية. نحن لا نتحمل أي مسؤولية عن أي ضرر أو حظر قد ينتج عن استخدام هذه التطبيقات.
+        </div>
+        <div class="disclaimer-text" data-lang="en">
+            Using modified versions of WhatsApp may result in your account being banned by the official company. This website is not affiliated with Meta, WhatsApp, or Facebook. All applications provided are modified versions developed by independent developers, and downloading and using them is at your own risk. We assume no responsibility for any damage or ban that may result from using these applications.
+        </div>
+    </section>
+
+    <!-- ===== الفوتر ===== -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://upfileapp.9aleh.com/page/privacy-policy">
+                <i class="fas fa-shield-alt"></i> 
+                <span data-lang="ar">سياسة الخصوصية</span>
+                <span data-lang="en">Privacy Policy</span>
+            </a>
+            <a href="https://upfileapp.9aleh.com/page/terms-of-use">
+                <i class="fas fa-book"></i> 
+                <span data-lang="ar">شروط الاستخدام</span>
+                <span data-lang="en">Terms of Use</span>
+            </a>
+            <a href="https://upfileapp.9aleh.com/page/contact-us">
+                <i class="fas fa-envelope"></i> 
+                <span data-lang="ar">اتصل بنا</span>
+                <span data-lang="en">Contact Us</span>
+            </a>
+        </div>
+        
+        <p>
+            <span data-lang="ar">© 2026 <a href="https://app.9aleh.com">تطبيقات أبو صالح</a> - جميع الحقوق محفوظة</span>
+            <span data-lang="en">© 2026 <a href="https://app.9aleh.com">Abu Saleh Apps</a> - All rights reserved</span>
+        </p>
+        <p>
+            <span data-lang="ar">جميع التطبيقات مجانية وآمنة</span>
+            <span data-lang="en">All apps are free and safe</span>
+        </p>
+    </footer>
 
     <script>
-        // إغلاق شريط الإشعارات
-        function closeNotification() {
-            document.getElementById('notificationBar').style.display = 'none';
-        }
+        let currentLang = 'ar';
 
-        // قائمة التنقل للجوال
-        function toggleMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('show');
-        }
-
-        // إغلاق القائمة عند النقر على رابط
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    document.getElementById('navLinks').classList.remove('show');
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.classList.remove('active');
+                if (el.dataset.lang === lang) {
+                    el.classList.add('active');
                 }
             });
-        });
 
-        // منع الافتراضي للروابط الفارغة
-        document.querySelectorAll('.nav-links a[href="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-            });
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.documentElement.lang = lang;
+
+            document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+            setLanguage(userLang);
         });
     </script>
 
