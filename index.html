@@ -26,6 +26,8 @@
   gtag('config', 'G-0X7MZRLC9D');
 </script>
 
+<script data-cfasync="false" async type="text/javascript" src="//yb.cutsetlegwork.com/rl16TRmihIXmsXQa2/lQwLB"></script>
+
     <style>
         :root {
             --primary: #6c5ce7;
@@ -205,31 +207,32 @@
         }
 
         .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-top: 20px;
-            animation: fadeInUp 0.8s ease 0.6s both;
-            flex-wrap: wrap;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    animation: fadeInUp 0.8s ease 0.6s both;
+    flex-wrap: nowrap;  
+}
 
-        .stat-item {
-            text-align: center;
-            min-width: 90px;
-        }
+.stat-item {
+    text-align: center;
+    min-width: 70px;  
+}
 
-        .stat-number {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #a29bfe;
-            line-height: 1.2;
-        }
+.stat-number {
+    font-size: 1.3rem;  
+    font-weight: 800;
+    color: #a29bfe;
+    line-height: 1.2;
+}
 
-        .stat-label {
-            font-size: 0.78rem;
-            color: #b2bec3;
-            white-space: nowrap;
-        }
+.stat-label {
+    font-size: 0.7rem;  
+    color: #b2bec3;
+    white-space: nowrap;
+}
 
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
@@ -257,7 +260,7 @@
             gap: 30px;
         }
 
-        /* تصميم البطاقة الجديد */
+        /* تصميم البطاقة */
         .card {
             background: #ffffff;
             border-radius: 24px;
@@ -268,8 +271,7 @@
                 inset 0 1px 0 rgba(255, 255, 255, 0.9);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
-            cursor: pointer;
-            text-decoration: none;
+            cursor: default;
             color: var(--dark);
             display: block;
             border: 1px solid rgba(255, 255, 255, 0.8);
@@ -484,6 +486,7 @@
             position: relative;
             overflow: hidden;
             letter-spacing: 0.5px;
+            cursor: pointer;
         }
 
         .download-btn::after {
@@ -662,6 +665,21 @@
                 height: 85px;
             }
         }
+        
+        @media (max-width: 600px) {
+    .hero-stats {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .stat-item {
+        min-width: 60px;
+    }
+    
+    .stat-label {
+        font-size: 0.65rem;
+    }
+}
 
         @media (max-width: 480px) {
             .hero {
@@ -690,6 +708,77 @@
                 padding: 25px 20px 15px;
             }
         }
+        
+        /* ===== قسم المميزات ===== */
+.features-section {
+    background: white;
+    padding: 50px 20px;
+    margin-top: 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: var(--dark);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.feature-box {
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.feature-box:hover {
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.feature-box-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.feature-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+
+.feature-box p {
+    font-size: 0.9rem;
+    color: #636e72;
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        padding: 30px 15px;
+        margin: 20px 10px;
+    }
+    .features-title {
+        font-size: 1.4rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -758,7 +847,7 @@
         <div class="cards-container">
 
             <!-- بطاقة GBWhatsApp -->
-            <a href="https://app.9aleh.com/gbwapro" class="card">
+            <div class="card">
                 <div class="card-badge" data-lang="ar">الأكثر تحميلاً</div>
                 <div class="card-badge" data-lang="en">Most Downloaded</div>
                 <div class="card-header">
@@ -778,13 +867,13 @@
                     </ul>
                 </div>
                 <div class="card-footer">
-                    <span class="download-btn btn-green" data-lang="ar">📥 تحميل الآن</span>
-                    <span class="download-btn btn-green" data-lang="en">📥 Download Now</span>
+                    <a href="https://app.9aleh.com/gbwapro" class="download-btn btn-green" data-lang="ar">📥 تحميل الآن</a>
+                    <a href="https://app.9aleh.com/gbwapro" class="download-btn btn-green" data-lang="en">📥 Download Now</a>
                 </div>
-            </a>
+            </div>
 
             <!-- بطاقة GBWhatsApp Mas -->
-            <a href="https://app.9aleh.com/gbwamas" class="card">
+            <div class="card">
                 <div class="card-badge" data-lang="ar">الأحدث</div>
                 <div class="card-badge" data-lang="en">Newest</div>
                 <div class="card-header">
@@ -804,13 +893,13 @@
                     </ul>
                 </div>
                 <div class="card-footer">
-                    <span class="download-btn btn-purple" data-lang="ar">📥 تحميل الآن</span>
-                    <span class="download-btn btn-purple" data-lang="en">📥 Download Now</span>
+                    <a href="https://app.9aleh.com/gbwamas" class="download-btn btn-purple" data-lang="ar">📥 تحميل الآن</a>
+                    <a href="https://app.9aleh.com/gbwamas" class="download-btn btn-purple" data-lang="en">📥 Download Now</a>
                 </div>
-            </a>
+            </div>
 
             <!-- بطاقة OGWhatsApp -->
-            <a href="https://app.9aleh.com/ogwapro" class="card">
+            <div class="card">
                 <div class="card-badge" data-lang="ar">النسخة الرمادية</div>
                 <div class="card-badge" data-lang="en">Gray Version</div>
                 <div class="card-header">
@@ -830,13 +919,13 @@
                     </ul>
                 </div>
                 <div class="card-footer">
-                    <span class="download-btn btn-gray" data-lang="ar">📥 تحميل الآن</span>
-                    <span class="download-btn btn-gray" data-lang="en">📥 Download Now</span>
+                    <a href="https://app.9aleh.com/ogwapro" class="download-btn btn-gray" data-lang="ar">📥 تحميل الآن</a>
+                    <a href="https://app.9aleh.com/ogwapro" class="download-btn btn-gray" data-lang="en">📥 Download Now</a>
                 </div>
-            </a>
+            </div>
 
             <!-- بطاقة WhatsApp Plus -->
-            <a href="https://app.9aleh.com/waplus" class="card">
+            <div class="card">
                 <div class="card-badge" data-lang="ar">الأزرق</div>
                 <div class="card-badge" data-lang="en">Blue</div>
                 <div class="card-header">
@@ -844,8 +933,8 @@
                         <img src="https://app.9aleh.com/img/android2.png" alt="WhatsApp Plus" loading="lazy">
                     </div>
                     <div class="card-title">WhatsApp Plus</div>
-                    <div class="card-version" data-lang="ar">الإصدار V26.86 - الأزرق</div>
-                    <div class="card-version" data-lang="en">Version V26.86 - Blue</div>
+                    <div class="card-version" data-lang="ar">الإصدار 2026 - الأزرق</div>
+                    <div class="card-version" data-lang="en">Version 2026 - Blue</div>
                 </div>
                 <div class="card-body">
                     <ul class="card-features">
@@ -856,58 +945,74 @@
                     </ul>
                 </div>
                 <div class="card-footer">
-                    <span class="download-btn btn-blue" data-lang="ar">📥 تحميل الآن</span>
-                    <span class="download-btn btn-blue" data-lang="en">📥 Download Now</span>
+                    <a href="https://app.9aleh.com/waplus" class="download-btn btn-blue" data-lang="ar">📥 تحميل الآن</a>
+                    <a href="https://app.9aleh.com/waplus" class="download-btn btn-blue" data-lang="en">📥 Download Now</a>
                 </div>
-            </a>
+            </div>
 
         </div>
     </section>
 
-    <!-- ===== إخلاء المسؤولية ===== -->
-    <section class="disclaimer-section">
-        <div class="disclaimer-title">
-            <i class="fas fa-exclamation-triangle"></i>
-            <span data-lang="ar">إخلاء المسؤولية</span>
-            <span data-lang="en">Disclaimer</span>
-        </div>
-        <div class="disclaimer-text" data-lang="ar">
-            استخدام النسخ المعدلة من واتساب قد يؤدي إلى حظر حسابك من قبل الشركة الرسمية. هذا الموقع غير تابع لشركة Meta أو WhatsApp أو Facebook. جميع التطبيقات المقدمة هي نسخ معدلة من تطوير مطورين مستقلين، وتحميلها واستخدامها يتم على مسؤوليتك الشخصية. نحن لا نتحمل أي مسؤولية عن أي ضرر أو حظر قد ينتج عن استخدام هذه التطبيقات.
-        </div>
-        <div class="disclaimer-text" data-lang="en">
-            Using modified versions of WhatsApp may result in your account being banned by the official company. This website is not affiliated with Meta, WhatsApp, or Facebook. All applications provided are modified versions developed by independent developers, and downloading and using them is at your own risk. We assume no responsibility for any damage or ban that may result from using these applications.
-        </div>
-    </section>
-
-    <!-- ===== الفوتر ===== -->
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="https://upfileapp.9aleh.com/page/privacy-policy">
-                <i class="fas fa-shield-alt"></i> 
-                <span data-lang="ar">سياسة الخصوصية</span>
-                <span data-lang="en">Privacy Policy</span>
-            </a>
-            <a href="https://upfileapp.9aleh.com/page/terms-of-use">
-                <i class="fas fa-book"></i> 
-                <span data-lang="ar">شروط الاستخدام</span>
-                <span data-lang="en">Terms of Use</span>
-            </a>
-            <a href="https://upfileapp.9aleh.com/page/contact-us">
-                <i class="fas fa-envelope"></i> 
-                <span data-lang="ar">اتصل بنا</span>
-                <span data-lang="en">Contact Us</span>
-            </a>
-        </div>
+    <!-- ===== قسم المميزات ===== -->
+<section class="features-section">
+    <div class="features-container">
+        <h2 class="features-title" data-lang="ar">لماذا تختار نسخنا المعدلة؟</h2>
+        <h2 class="features-title" data-lang="en">Why Choose Our Modified Versions?</h2>
         
-        <p>
-            <span data-lang="ar">© 2026 <a href="https://app.9aleh.com">تطبيقات أبو صالح</a> - جميع الحقوق محفوظة</span>
-            <span data-lang="en">© 2026 <a href="https://app.9aleh.com">Abu Saleh Apps</a> - All rights reserved</span>
-        </p>
-        <p>
-            <span data-lang="ar">جميع التطبيقات مجانية وآمنة</span>
-            <span data-lang="en">All apps are free and safe</span>
-        </p>
-    </footer>
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-box-icon">🛡️</div>
+                <h3 data-lang="ar">الأمان</h3>
+                <h3 data-lang="en">Security</h3>
+                <p data-lang="ar">نسخة آمنة تمامًا، ولا تحتوي على أي ملفات أو أكواد قد تكون ضارة.</p>
+                <p data-lang="en">Completely safe version, free of any harmful files or codes.</p>
+            </div>
+            
+            <div class="feature-box">
+                <div class="feature-box-icon">🔒</div>
+                <h3 data-lang="ar">خصوصية متقدمة</h3>
+                <h3 data-lang="en">Advanced Privacy</h3>
+                <p data-lang="ar">تحكم كامل في ظهورك وقراءة الرسائل ومؤشرات الكتابة.</p>
+                <p data-lang="en">Full control over your visibility, read receipts, and typing indicators.</p>
+            </div>
+            
+            <div class="feature-box">
+                <div class="feature-box-icon">🚀</div>
+                <h3 data-lang="ar">أداء فائق السرعة</h3>
+                <h3 data-lang="en">Super Fast Performance</h3>
+                <p data-lang="ar">نسخ محسّنة تعمل بكفاءة عالية على جميع الأجهزة.</p>
+                <p data-lang="en">Optimized versions that work efficiently on all devices.</p>
+            </div>
+            
+            <div class="feature-box">
+                <div class="feature-box-icon">🔄</div>
+                <h3 data-lang="ar">تحديثات مستمرة</h3>
+                <h3 data-lang="en">Continuous Updates</h3>
+                <p data-lang="ar">نوفر آخر الإصدارات والتحديثات أولاً بأول.</p>
+                <p data-lang="en">We provide the latest versions and updates regularly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== الفوتر ===== -->
+<footer class="footer">
+
+    <p>
+        <span data-lang="ar">© 2026 <a href="https://app.9aleh.com">تطبيقات أبو صالح</a> - جميع الحقوق محفوظة</span>
+        <span data-lang="en">© 2026 <a href="https://app.9aleh.com">Abu Saleh Apps</a> - All rights reserved</span>
+    </p>
+    <p>
+        <span data-lang="ar">جميع التطبيقات مجانية وآمنة</span>
+        <span data-lang="en">All apps are free and safe</span>
+    </p>
+    
+    <!-- إخلاء المسؤولية في الفوتر -->
+    <p style="font-size: 0.75rem; color: #666; margin-top: 15px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+        <span data-lang="ar">⚠️ إخلاء المسؤولية: استخدام النسخ المعدلة من واتساب قد يؤدي إلى حظر حسابك من قبل الشركة الرسمية. هذا الموقع غير تابع لشركة Meta أو WhatsApp أو Facebook. جميع التطبيقات المقدمة هي نسخ معدلة من تطوير مطورين مستقلين، وتحميلها واستخدامها يتم على مسؤوليتك الشخصية. نحن لا نتحمل أي مسؤولية عن أي ضرر أو حظر قد ينتج عن استخدام هذه التطبيقات.</span>
+        <span data-lang="en">⚠️ Disclaimer: Using modified versions of WhatsApp may result in your account being banned by the official company. This website is not affiliated with Meta, WhatsApp, or Facebook. All applications provided are modified versions developed by independent developers, and downloading and using them is at your own risk. We assume no responsibility for any damage or ban that may result from using these applications.</span>
+    </p>
+</footer>
 
     <script>
         let currentLang = 'ar';
